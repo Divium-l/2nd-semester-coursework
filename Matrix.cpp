@@ -36,7 +36,7 @@ public:
     {
         return rowSize;
     }
-
+    
     size_t getColSize()
     {
         return colSize;
@@ -80,21 +80,6 @@ public:
 
     }
 
-    //Убрать
-    void toArray(int* array, size_t& size)
-    {
-        size = rowSize * colSize;
-        size_t index = 0;
-
-        for (size_t i = 0; i < rowSize; i++)
-            for (size_t j = 0; j < colSize; j++)
-            {
-                array[index] = matrix[i][j];
-                index++;
-            }
-        
-    }
-
 private:
     size_t rowSize;
     size_t colSize;
@@ -103,7 +88,7 @@ private:
     size_t minArraySize;
     int* minArray;
 
-
+    //загрязнение памяти
     int** initialize()
     {
         int** matrix = new int* [rowSize];
@@ -116,6 +101,7 @@ private:
         return matrix;
     }
 
+    //отчистка памяти
     void destruct()
     {
         if (matrix == nullptr)
