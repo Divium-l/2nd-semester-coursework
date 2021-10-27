@@ -1,5 +1,6 @@
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudio,c++,windows
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudio,c++,windows
+### Custom ###
+.sln
+.vcxproj.*
 
 ### C++ ###
 # Prerequisites
