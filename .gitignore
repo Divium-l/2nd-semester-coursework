@@ -1,6 +1,7 @@
 ### Custom ###
-.sln
-.vcxproj.*
+# Additiona files
+*.sln
+*.vcxproj*
 
 ### C++ ###
 # Prerequisites
